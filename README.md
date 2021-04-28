@@ -37,7 +37,7 @@ mvn clean test
 ```
 or
 ```
-mvn -Dtests=testing.xml test
+mvn -Dtests=testng.xml test
 ```
 
 # Create report
