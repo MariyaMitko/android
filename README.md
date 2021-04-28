@@ -1,5 +1,5 @@
 # Android
-Java project for mobile app automated testing
+Java project for mobile app automated testing ([SmartBook application](https://smart-book.net/))
 
 # Platform
 Android
