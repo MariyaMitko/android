@@ -4,6 +4,10 @@
     <test name="Smoke">
         <classes>
             <class name="mitsko.mobile.automation.android.test.MainPageTest"/>
+            <class name="mitsko.mobile.automation.android.test.BooksPageTest"/>
+            <class name="mitsko.mobile.automation.android.test.TelegramPageTest"/>
+            <class name="mitsko.mobile.automation.android.test.TextPageTest"/>
+            <class name="mitsko.mobile.automation.android.test.WordsPageTest"/>
         </classes>
     </test>
 </suite>

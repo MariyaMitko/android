@@ -19,7 +19,7 @@ public class WordsPage extends AbstractPage {
     private final String deleteBtnId              = "com.kursx.smartbook:id/update_delete_button";
     private final String confirmBtnId             = "com.kursx.smartbook:id/md_buttonDefaultPositive";
     private final String savedWordsSelector       = "//*[@resource-id='com.kursx.smartbook:id/dictionary_item_layout']";
-    private final String wordsSelector            = "/*[@resource-id='com.kursx.smartbook:id/dictionary_view_item_first']";
+    private final String wordsSelector            = "//*[@resource-id='com.kursx.smartbook:id/dictionary_view_item_first']";
     private final String translationSelector      = "//*[@resource-id='com.kursx.smartbook:id/dictionary_view_item_second']";
     
 	public WordsPage(AndroidDriver driver)
