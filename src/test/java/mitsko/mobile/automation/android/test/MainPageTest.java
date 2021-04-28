@@ -28,14 +28,14 @@ public class MainPageTest {
        mp = st.getMainPage();
        logger.info("== WHEN app's Main page is opened ==");
     }
-    
+     
     @Test
     @Step("Verify main page contains correct title")
     public void verifyTitle() {
     	
        logger.info("== THEN page contains correct title ==");
        Assert.assertEquals(mp.readTitle(), hp.getExpectedTitle());
-   }
+    }
          
     @Test
     @Step("Verify Play button is enabled")
@@ -43,7 +43,7 @@ public class MainPageTest {
 
        logger.info("== THEN Play button is enabled ==");
        Assert.assertEquals(mp.isPlayBtnEnabled(), true);
-   }
+    }
     
     @Test
     @Step("Verify main page contains 6 available widgets")
@@ -54,8 +54,7 @@ public class MainPageTest {
 
        logger.info("== THEN page contains 6 available widgets ==");
        Assert.assertEquals(excpetedArr, actualArr);
-   }
-    
+    }
      
     @AfterClass
     public void teardown() {

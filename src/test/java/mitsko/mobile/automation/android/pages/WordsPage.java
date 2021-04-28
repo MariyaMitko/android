@@ -2,17 +2,12 @@ package mitsko.mobile.automation.android.pages;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import mitsko.mobile.automation.android.objects.Book;
 import mitsko.mobile.automation.android.objects.TranslatedWord;
-
 import java.util.List;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
 
 public class WordsPage extends AbstractPage {
-    private static final Logger logger =  LogManager.getRootLogger();
     
     private final String addBtnId                 = "com.kursx.smartbook:id/dictionary_add_button";
     private final String translateWordModalId     = "com.kursx.smartbook:id/linearLayout4";
@@ -37,6 +32,7 @@ public class WordsPage extends AbstractPage {
 
 		MobileElement addBtnElement = (MobileElement) driver.findElementById(addBtnId);
 		boolean isEnabled = addBtnElement.isEnabled();
+		
 		return isEnabled;
 	}
 	
@@ -51,6 +47,7 @@ public class WordsPage extends AbstractPage {
 
 		MobileElement addBtnElement = (MobileElement) driver.findElementById(translateWordModalId);
 		boolean isDisplayed = addBtnElement.isDisplayed();
+		
 		return isDisplayed;
 	}
 	

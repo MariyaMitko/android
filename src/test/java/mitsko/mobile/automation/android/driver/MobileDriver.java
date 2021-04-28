@@ -5,25 +5,16 @@ import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
-
-
 
 public class MobileDriver {
 	    
      	private static AndroidDriver driver;
 	
 	    private static final Logger logger =  LogManager.getRootLogger();
-
 	    
-	    private MobileDriver(){
-	    	
-	    };
-
-
 	    public static AndroidDriver getDriver() throws MalformedURLException {
 	        if (null == driver){
 	        	 DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -46,14 +37,17 @@ public class MobileDriver {
 	             
 	             driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	             
-	             logger.info("Browser started");
+	             logger.info("============== DRIVER STARTED ============== ");
 	        }
 
 	        return driver;
 	    }
 
 	    public static void closeDriver(){
+	    	
 	        driver.quit();
 	        driver = null;
+	        
+	        logger.info("============== DRIVER CLOSED ============== ");
 	    }
 	}

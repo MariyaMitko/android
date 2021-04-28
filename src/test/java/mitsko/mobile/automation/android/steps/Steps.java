@@ -1,10 +1,6 @@
 package mitsko.mobile.automation.android.steps;
 
 import java.net.MalformedURLException;
-
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
 import mitsko.mobile.automation.android.pages.BooksPage;
 import mitsko.mobile.automation.android.pages.ChaptersPage;
 import mitsko.mobile.automation.android.pages.MainPage;
@@ -17,8 +13,6 @@ import mitsko.mobile.automation.android.driver.MobileDriver;
 public class Steps {
 	
 	private AndroidDriver driver;
-
-	private final Logger logger = LogManager.getRootLogger();
 
 	public void initDriver() throws MalformedURLException {
 		driver = MobileDriver.getDriver();

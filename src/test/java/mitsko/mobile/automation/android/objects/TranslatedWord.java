@@ -7,7 +7,6 @@ public class TranslatedWord {
 	public TranslatedWord (String word, String translation){
 		this.word = word;
 		this.translation = translation;
-		
 	}
 
 	public synchronized String getWord() {
